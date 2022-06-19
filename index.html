@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <h1 id="headline" class="my-5 fw-bolder text-light text-center">Prepaid Disconnection guide</h1>
+    <div class="w-75 mx-auto bg-dark shadow-lg p-5 mt-5 text-light">
+        <div class="text-start">
+            <i class="text-secondary">Choose an option by clicking on the white circle</i>
+        </div>
+        <h3>prepaid line is disconnected</h3>
+        <div class="options d-flex my-3">
+            <div class="form-check mx-2">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="deactive">
+                <label class="form-check-label">
+                   siebel and ccat acounts are deactive
+                </label>
+            </div>
+            <div class="form-check mx-2">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="active">
+                <label class="form-check-label">
+                    siebel Active but ccat is disconnected
+                </label>
+            </div>
+            
+        </div>
+        <div class="answers">
+            <div class="answer deactive">
+                <h3>ايه المشكلة في الانترنت ؟</h3>
+                <div class="options d-flex my-3">
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="slow">
+                        <label class="form-check-label">
+                          بطئ
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="down">
+                        <label class="form-check-label">
+                           مش شغال
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="unstable">
+                        <label class="form-check-label">
+                           بيفصل ويشتغل
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="pass">
+                        <label class="form-check-label">
+                           اغير ال
+                           password
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="deny">
+                        <label class="form-check-label">
+                            الباقة خلصت من غير ما استهلكها
+                            (deny usage)
+                        </label>
+                    </div>
+                </div>
+                <div class="answers">
+                    <div class="answer slow">
+                        اتأكد ان لسه متبقي ميجات في الباقة وان الباقة مش في فترة السماح
+                        <br>
+                        اتأكد ان السرعة علي البيت ستريم متطابقة للسرعة المتعاقد عليها علي السيبل
+                        <br>
+                        لو نفس المشكلة موجودة هيحتاج يكلم الدعم الفني
+                    </div>
+                    <div class="answer down">
+                        <h3>ايه اللمبات المطفيين في الراوتر ؟</h3>
+                        <div class="options d-flex my-3">
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option7">
+                                <label class="form-check-label">
+                                  الأربعة مطفيين
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option8">
+                                <label class="form-check-label">
+                                   ال
+                                   ADSL
+                                   والانترنت مطفيين
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option9">
+                                <label class="form-check-label">
+                                   الانترنت بس مطفية
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option10">
+                                <label class="form-check-label">
+                                    ال
+                                    WLAN
+                                    بس مطفية
+                                </label>
+                            </div>
+                        </div>
+                        <div class="answers">
+                            <div class="answer option7">
+                                اتأكد من توصيل الراوتر في مكان مختلف للتأكد ان المشكلة مش في الكهرباء
+                                <br>
+                                لو نفس المشكلة موجودة هيحتاج يكلم الدعم الفني
+                            </div>
+                            <div class="answer option8">
+                                <p class="fw-bolder">للفايبر :</p>
+                                اتأكد من البيتستريم لو ال 
+                                "MSAN offline"
+                                ابعت ال 
+                                MSAN code 
+                                لل 
+                                ICC floor 
+                                واطلب من الكاستمر يستني وهتتحل المشكلة في اقرب وقت
+                                <br>
+                                اتأكد من البيتستريم لو 
+                                "Administrative locked"
+                                كده الخط الأرضي عليه فواتير وهيحتاج يدفعها لتشغيل الخط الأرضي والانترنت مرة تانية
+                                <br>
+                                اتأكد من البيتستريم لو ال 
+                                "Administrative port locked"
+                                اعمل 
+                                unlock
+                                علي البيتسريم
+                                <br>
+                                اتأكد من البيتستريم لو ال 
+                                "operational status down" :
+                                <br>
+                                اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
+                                <br>
+                                يوصل سلك الحرارة الرئيسي للراوتر من غير 
+                                splitter
+                                <br>
+                                لو نفس المشكلة موجودة اعمل 
+                                SR 
+                                <p class="fw-bolder">individual / adsl request / fiber line down</p>
+                                <p class="fw-bolder">للنحاس :</p>
+                                اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
+                                <br>
+                                يوصل سلك الحرارة الرئيسي للراوتر من غير 
+                                splitter
+                                <br>
+                                لو نفس المشكلة موجودة اعمل 
+                                SR 
+                                <p class="fw-bolder">individual / adsl request / copper line down</p>
+                            </div>
+                            <div class="answer option9">
+                                اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
+                                <br>
+                                لو الخط فايبر اتأكد علي ال bit stream ان الكابينة مش offline
+                                <br>
+                                اتأكد ان الرقم المكتوب في ال
+                                INNER-VLAN
+                                علي البيتستريم هو نفس الرقم الموجود علي سيبل في ال
+                                radius
+                                <br>
+                                لو نفس المشكلة موجودة هيحتاج يكلم الدعم الفني
+                                
+                            </div>
+                            <div class="answer option10">
+                                تقدر تشغل ال
+                                WLAN
+                                من خلال الزرار الموجود في ضهر الراوتر مكتوب عليه
+                                WLAN
+                                <br>
+                                لو نفس المشكلة شغل ال 
+                                WLAN
+                                من خلال صفحة الراوتر
+                            </div>
+                        </div>
+                    </div>
+                    <div class="answer unstable">
+                        اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
+                        <br>
+                        يوصل سلك الحرارة الرئيسي للراوتر من غير 
+                        splitter
+                        <br>
+                        لو نفس المشكلة موجودة هيحتاج يكلم الدعم الفني
+                    </div>
+                    <div class="answer pass">
+                        تقدر تغير الباسورد عن طريق تطبيق انا فودافون والتغيير بيتم خلال ساعة وبيوصل ليك رسالة تأكيد ان الباسورد اتغير
+                        <br>
+                        غير الباسورد عن طريق صفحة الراوتر
+                    </div>
+                    <div class="answer deny">
+                        الكاستمر ممكن يتبعت ليه تقرير مفصل بأستهلاكه من الكود 
+                        #2828*
+                        ويختار تفاصيل الاستهلاك و ده بيعمل 
+                        automated SR
+                        بيتبعت ليه الرسالة بعدها خلال يومين
+                    </div>
+                </div>
+            </div>
+            <div class="answer active">
+                <div class="options d-flex my-3">
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option21">
+                        <label class="form-check-label">
+                          عايز اغير رقم الموبايل المرتبط بيه خدمة ال
+                          ADSL
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option22">
+                        <label class="form-check-label">
+                           عايز الغي خدمة ال
+                           ADSL
+                        </label>
+                    </div>
+                </div>            
+                <div class="answers">
+                    <div class="answer option21">
+                        اي نقل ملكية من شخص لاخر او نقل خدمة ال
+                        ADSL
+                        من رقم موبايل لرقم اخر 
+                        <span class="text-danger text-decoration-underline fw-bolder"> هنوجه العميل لأقرب فرع</span>
+                        معاه البطاقة الشخصية سارية وسليمة عشان يمضي علي طلبات نقل الملكية او التحويل
+                    </div>
+                    <div class="answer option22">
+                        لو سبب الالغاء واحد من الاسباب دي :
+                        <ul>
+                            <li>Travelling</li>
+                            <li>Change Address</li>
+                            <li>Deactivation within installation</li>
+                        </ul>
+                        وجه الكاستمر لاقرب فرع للألغاء
+                        <br>
+                        اي سبب اخر :
+                        اعمل
+                        SR
+                        <p>individual / ADSL retention / ADSL request / ADSL Deactivation</p>
+                        <br>
+                        <i class="text-secondary">use google chrome to be able to choose date below</i>
+                        <br>
+                        <p> حساب مصاريف الالغاء للراوتر
+                            VDSL
+                            :</p>
+                        <label for="dataInput">بداية تاريخ ايجار الراوتر ان وجد</label>
+                        <input id="dateInput" type="date">
+                        <p id="fees" class="mt-2"></p>
+                        <br>
+                        <p> حساب مصاريف الالغاء للراوتر
+                            VDSL
+                            الجديد
+                            :</p>
+                        <label for="dataInputNew">بداية تاريخ ايجار الراوتر ان وجد</label>
+                        <input id="dateInputNew" type="date">
+                        <p id="feesNew" class="mt-2"></p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
