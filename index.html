@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html >
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index-style.css">
@@ -8,19 +8,19 @@
 <body class="bg-dark">
     <h1 id="headline" class="my-5 fw-bolder text-light text-center">Prepaid Disconnection guide</h1>
     <div class="w-75 mx-auto bg-dark shadow-lg p-5 mt-5 text-light">
-        <div class="text-start">
+        <div class="text-start mb-4">
             <i class="text-secondary">Choose an option by clicking on the white circle</i>
         </div>
         <h3>prepaid line is disconnected</h3>
         <div class="options d-flex my-3">
             <div class="form-check mx-2">
-                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="deactive">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q1" value="deactive">
                 <label class="form-check-label">
                    siebel and ccat acounts are deactive
                 </label>
             </div>
             <div class="form-check mx-2">
-                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="active">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q1" value="active">
                 <label class="form-check-label">
                     siebel Active but ccat is disconnected
                 </label>
@@ -29,10 +29,128 @@
         </div>
         <div class="answers">
             <div class="answer deactive">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique quaerat, vel iusto tempore libero corrupti optio dolore consequatur facilis!
+                <h3>check siebel</h3>
+                <div class="options d-flex my-3">
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q2" value="newAccount">
+                        <label class="form-check-label">
+                            deactivated with active new account
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q2" value="noNewAccount">
+                        <label class="form-check-label">
+                            deactivated with no new account
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="answers">
+                    <div class="answer newAccount">
+                        <h3>check status</h3>
+                        <div class="options d-flex my-3">
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q5" value="acctiveStatus">
+                                <label class="form-check-label">
+                                    line status is active
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q5" value="assignedStatus">
+                                <label class="form-check-label">
+                                    line status is assigned
+                                </label>
+                            </div>
+                            
+                        </div>
+                        <div class="answers">
+                            <div class="answer acctiveStatus">
+                                no opportunity to get the line back 
+                            </div> 
+                            <div class="answer assignedStatus">
+                                as long as customer insisted we will send mail to supply chain 
+                            </div> 
+                        </div>
+                    </div>  
+                    <div class="answer noNewAccount">
+                        <h3>check line status</h3>
+                        <div class="options d-flex my-3">
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q3" value="freeStatus">
+                                <label class="form-check-label">
+                                    status free
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q3" value="notFreeStatus">
+                                <label class="form-check-label">
+                                    status any thing other than free
+                                </label>
+                            </div>
+                        </div>
+                        <div class="answers">
+                            <div class="answer freeStatus">
+                                <h3>check line value</h3>
+                                <div class="options d-flex my-3">
+                                    <div class="form-check mx-2">
+                                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q4" value="acceptValue">
+                                        <label class="form-check-label">
+                                            Value is regular or premium < 500
+                                        </label>
+                                    </div>
+                                    <div class="form-check mx-2">
+                                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q4" value="storeNeededValue">
+                                        <label class="form-check-label">
+                                            Value is premium > 500
+                                        </label>
+                                    </div>
+                                    <div class="form-check mx-2">
+                                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="q4" value="rejectValue">
+                                        <label class="form-check-label">
+                                            Value is enterprise
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="answers">
+                                    <div class="answer acceptValue" dir="rtl" lang="ar">
+                                        يمكن تشغيل الخط مرة اخر كاستثناء اذا لم يمر علية 3 اشهر من وقت ال 
+                                        Disconnection
+                                        <br>
+                                        <b>Individual // Policy & Procedures // Create Siebel // Exception/ No new account</b>
+                                    </div> 
+                                    <div class="answer storeNeededValue" dir="rtl" lang="ar">
+                                        -مش هيكون من حق العميل تشغيل الخط مرة ثانية الا فى حالة دفع ثمن الرقم فى الفرع
+                                        <br>
+                                        هيعمل مندوب خدمة العملاء فى الفرع
+                                        SR
+                                        وهيحط ال 
+                                        receipt
+                                        الدفع فيها 
+                                        <br>
+                                        ممكن  نشغل الخط للعميل مرة ثانيةعن طريق استثناء
+                                        على حسب ال
+                                        manager / supervisor
+                                        في الفرع
+                                        <br>
+                                        لازم يكون ال
+                                        approval mail attached in SR
+                                        <br>
+                                        <b>Individual // Policy & Procedures // Create Siebel // Exception/ more than 500 L.E</b>
+                                    </div> 
+                                    <div class="answer rejectValue">
+                                        no opportunity to get the line back 
+                                    </div> 
+                                </div>
+                            </div> 
+                            <div class="answer notFreeStatus">
+                                no opportunity to get the line back 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="answer active">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque illum corporis, aut optio nobis labore nisi dicta earum tempora!
+            <div class="answer active" dir="rtl" lang="ar">
+                هنطلب من العميل يشحن ومن الفاز بنعمل ccat mismatch وكده هيشتغل تاني بشكل طبيعي 
             </div> 
         </div>
 
